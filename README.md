@@ -1,37 +1,66 @@
 # Detection of Image Recolouring through CNN
 
-This repository contains the code and resources for my project.
+This project is a full-stack machine learning web application that detects whether an image has been recolored or not using a Convolutional Neural Network (CNN).
 
-## Files
+Users can upload an image through a web interface, and the system predicts whether the image is recolored based on a trained CNN model.
 
-- **app.py**: Main application script
-- **code1.py**: Actual code for the project
-- **static**: Contains static assets like images and styles
-- **templates**: Contains HTML templates
-- **test.py**: Test script for the model
+---
 
-## Model and Dataset Files
+## 🔧 Technologies Used
+- Python
+- TensorFlow / Keras
+- Flask
+- HTML & CSS
+- Git and Git LFS
 
-The `.keras` model file and the edited dataset are too large to be uploaded directly to GitHub. You can download them from the following links:
+---
 
-- **Model File**: https://drive.google.com/drive/u/0/folders/1wIi-jbUa7DZjPExSeJom4ZVifdwPNjvM
-- **Dataset**: https://drive.google.com/drive/u/0/folders/1tMV7bVwGXM87lqwmYs61wfT2Bkd-S3-m
+## 📁 Project Structure
 
-Once downloaded, extract the `.keras` model file and place it in the project directory, and extract the dataset to the appropriate location for your application.
+Detection-of-Image-Recolouring-through-CNN/
+│
+├── app.py                  # Flask backend application
+├── cnn_model.keras         # Trained CNN model (tracked using Git LFS)
+├── requirements.txt        # Python dependencies
+├── static/                 # Static files (CSS, images)
+├── templates/              # HTML templates
+├── code1.py                # Model-related logic
+├── test.py                 # Testing script
+└── README.md
 
-## Setup Instructions
+---
 
-1. Clone this repository:
-   ```bash
-   https://github.com/Nandhinidevi-19/Detection-of-Image-Recolouring-through-CNN.git
-2. Install the required dependencies from the requirements.txt file:
-   ```bash
-   pip install -r requirements.txt
-4. Download the .keras model file and the edited dataset from the links above and place them in the project directory.
-5. Alternatively, if you want to run the web application:
-   ```bash
-   python app.py
+## 🚀 How to Run the Project
 
+### Step 1: Clone the repository
+git clone https://github.com/Nandhinidevi-19/Detection-of-Image-Recolouring-through-CNN.git
+
+cd Detection-of-Image-Recolouring-through-CNN
+
+### Step 2: Install dependencies
+pip install -r requirements.txt
+
+### Step 3: Run the application
+python app.py
+
+### Step 4: Open in browser
+http://127.0.0.1:5000
+
+---
+
+## ✨ Features
+- Image upload via web interface
+- CNN-based recoloring detection
+- Flask backend for real-time prediction
+- End-to-end machine learning web application
+
+---
+
+## 📌 Note
+The trained CNN model is included in this repository using **Git Large File Storage (Git LFS)**.  
+No external download links are required.
+
+---
 
 ## Contributors
 
