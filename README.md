@@ -38,18 +38,13 @@ Detection-of-Image-Recolouring-through-CNN/
 
 
 ---
-## Setup Instructions
+Setup Instructions
+Step 1: Clone the repository
 
-### Step 1: Clone the repository
-
-```bash
 git clone https://github.com/Nandhinidevi-19/Detection-of-Image-Recolouring-through-CNN.git
-exit
 
 Step 2: Install required dependencies
-'''bash
 pip install -r requirements.txt
-exit
 
 ### Step 3: Model file
 The trained CNN model file (`cnn_model.keras`) is already included in this repository using **Git LFS**.
