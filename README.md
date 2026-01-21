@@ -38,11 +38,10 @@ Detection-of-Image-Recolouring-through-CNN/
 
 
 ---
-## Setup Instructions
-
-### Step 1: Clone the repository
-
+🔹 Setup Instructions
+Step 1: Clone the repository
 git clone https://github.com/Nandhinidevi-19/Detection-of-Image-Recolouring-through-CNN.git
+
 cd Detection-of-Image-Recolouring-through-CNN
 
 Step 2: Install required dependencies
