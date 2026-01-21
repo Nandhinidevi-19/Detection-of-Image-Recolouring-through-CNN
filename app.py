@@ -1,9 +1,6 @@
 from flask import Flask, request, jsonify, render_template
 from tensorflow.keras.models import load_model
-from tensorflow.keras.preprocessing import image
 import numpy as np
-import os
-from io import BytesIO
 from PIL import Image
 
 app = Flask(__name__)
@@ -19,19 +16,19 @@ def index():
 def predict():
     file = request.files['file']
     if file:
-        # Read the image file
-        img = Image.open(file.stream)
+        img = Image.open(file)
         img = img.resize((192, 192))
         img_array = np.array(img)
         img_array = np.expand_dims(img_array, axis=0)
         img_array = img_array / 255.0
 
         prediction = model.predict(img_array)
-        result = (prediction > 0.5).astype("int32")
+        result = int(prediction[0][0] > 0.5)
 
-        return jsonify({'prediction': result.tolist()})
+        return jsonify({'prediction': result})
     else:
         return jsonify({'error': 'No file uploaded'}), 400
 
-if __name__ == '__main__':
-    app.run(debug=True)
+# IMPORTANT FOR DEPLOYMENT
+if __name__ == "__main__":
+    app.run(host="0.0.0.0", port=5000)
