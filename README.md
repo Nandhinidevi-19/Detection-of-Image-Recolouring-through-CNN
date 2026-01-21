@@ -59,7 +59,9 @@ pip install -r requirements.txt
 
 The trained CNN model file (`cnn_model.keras`) is already included in this repository using **Git Large File Storage (Git LFS)**.
 
-Features
+---
+
+##Features
 
 Image upload via web interface
 
@@ -69,12 +71,16 @@ Flask backend for real-time prediction
 
 End-to-end machine learning web application
 
-Note
+---
+
+##Note
 
 The trained CNN model (cnn_model.keras) is included in this repository using Git Large File Storage (Git LFS).
 No external download links are required.
 
-Contributors
+---
+
+##Contributors
 
 Nandhinidevi A T
 
