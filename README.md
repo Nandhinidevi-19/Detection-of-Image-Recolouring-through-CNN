@@ -19,32 +19,32 @@ Users can upload an image through a web interface, and the system predicts wheth
 ## Project Structure
 
 Detection-of-Image-Recolouring-through-CNN/
-│
-├── app.py # Flask backend application
-├── cnn_model.keras # Trained CNN model (tracked using Git LFS)
-├── requirements.txt # Python dependencies
-├── static/ # Static files (CSS, images)
-├── templates/ # HTML templates
-├── code1.py # Model-related logic
-├── test.py # Testing script
-└── README.md
+├── app.py                 # Flask backend application
+├── cnn_model.keras        # Trained CNN model (tracked using Git LFS)
+├── requirements.txt       # Python dependencies
+├── static/                # Static files (CSS, images)
+├── templates/             # HTML templates
+├── code1.py               # Model-related logic
+├── test.py                # Testing script
+└── README.md              # Project documentation
 
 
 ---
-
-## How to Run the Project
+## Setup Instructions
 
 ### Step 1: Clone the repository
+
 ```bash
 git clone https://github.com/Nandhinidevi-19/Detection-of-Image-Recolouring-through-CNN.git
 cd Detection-of-Image-Recolouring-through-CNN
-Step 2: Install dependencies
+
+Step 2: Install required dependencies
 pip install -r requirements.txt
-Step 3: Run the Flask application
-python app.py
-Step 4: Open in browser
-Open your browser and go to:
-http://127.0.0.1:5000
+
+Step 3: Initialize Git LFS
+git lfs install
+
+The trained CNN model (cnn_model.keras) is already included in the repository using Git Large File Storage (Git LFS).
 
 Features
 
